@@ -8,10 +8,10 @@ El script puede traer valores de UF de otros periodos, agregando el periodo como
 
 
 ### Uso de uf.bat
-**(pensado para windows)**
+*(pensado para windows)*
  - Para usar parámetros al llamar el script, tanto uf.py como uf.bat deben ir en C:\Users\(nombre de usuario)\
  - Editar uf.bat reemplazando (nombre de usuario).
- - Asegurarse que la ruta al archivo .py esté correcta. ( C:\Users\(nombre de usuario)\uf.py u otro si se desea usar otra ruta).
+ - Asegurarse que la ruta al archivo .py esté correcta. ( C:\Users\\(nombre de usuario)\uf.py u otro si se desea usar otra ruta).
 
 Para obtener la UF se puede ejecutar Win + R escribiendo "uf".
 Para obtener la UF de otros periodos se le puede agregar una fecha despues de "uf" en formato AAAMM. Ejemplo: "uf 202302".
