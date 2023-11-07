@@ -15,7 +15,12 @@ try:
     if len(FECHAPERIODO) != 6:
         clip.copy('Periodo mal ingresado')
     else:
-        FECHA = datetime.date(int(FECHAPERIODO[:4]),int(FECHAPERIODO[5:6])+1,1) - datetime.timedelta(days=1)
+        MESNUM = int(FECHAPERIODO[4:6])+1
+        ANNONUM = int(FECHAPERIODO[:4])
+        if MESNUM == 13:
+            MESNUM = 1
+            ANNONUM = ANNONUM + 1
+        FECHA = datetime.date(ANNONUM,MESNUM,1) - datetime.timedelta(days=1)
         FECHA = FECHA.strftime('%d-%m-%Y')
 except:
     FECHA = FECHA_DEFAULT
